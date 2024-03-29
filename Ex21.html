@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="digiclock"></div>
+    <script>
+        digiclock=document.getElementById("digiclock")
+        day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        month=["J","F","M","A"]
+        function clock()
+        {
+        dt=new Date();
+        hh=dt.getHours();
+        mm=dt.getMinutes();
+        ss=dt.getSeconds();
+        time=hh+":"+mm+":"+ss;
+        date=day[dt.getDay()]+" "+month[dt.getMonth()]+" "+dt.getFullYear();
+        digiclock.innerHTML=time+ " "+ date;
+        }
+        setInterval(clock,1000)
+    </script>
+</body>
+</html>

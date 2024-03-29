@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            color:white;
+            font-size: 40px;
+            font-weight: 700;
+            margin: 10px;
+        }
+        .container{
+            display: flex;
+            width: auto;
+            height: 100vh;
+            background-color: black;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+        .container div{
+            display: flex;
+            justify-content: center;
+            align-content: space-evenly;
+            align-items: center;
+            border: blue 10px double;
+        }
+        .d1{
+            position: relative;
+        }
+        .d1 img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d1">
+            <img src="IWT302_lab/images/1.jpeg" alt=""><span style="z-index: 10;color: brown;">Hard work leads to success</span></div>
+        <div class="d1"><img src="IWT302_lab/images/2.jpeg" alt=""><span style="z-index: 10; color: brown;">Rise high</span></div>
+        <div  class="d1"><img src="IWT302_lab/images/3.jpeg" alt=""><span style="z-index: 10; color: brown;">Don't judge a book by its cover</span></div>
+        <div  class="d1"><img src="IWT302_lab/images/4.jpeg" alt=""><span style="z-index: 10; color: brown;">Honesty is the best policy</span></div>
+        <div  class="d1"><img src="IWT302_lab/images/5.jpeg" alt=""><span style="z-index: 10; color: brown;">You can do it</span></div>
+        <div  class="d1"><img src="IWT302_lab/images/8.jpeg" alt=""><span style="z-index: 10; color: brown;">Practice makes a man perfect</span></div>
+        <div  class="d1"><img src="IWT302_lab/images/7.jpeg" alt=""><span style="z-index: 10; color: brown;">Where there is a will there is a way</span></div>
+</div>
+</body>
+</html>

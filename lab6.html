@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#0E9040">
+    <form action="lab5.html" method="post">
+        <fieldset>
+            <legend>Login Info</legend>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter username"><br>
+        <label for="'pass">Password</label>
+        <input type="password" name="pass" placeholder="Enter password"><br>
+        <label for="branch">Choose your branch</label>
+        </fieldset>
+        <input type="radio" name="branch" value="IT">IT
+        <input type="radio" name="branch" value="CS">CS
+        <input type="radio" name="branch" value="MT">MT<br>
+        <label for="address">Your address</label>
+        <textarea name="address" rows="5" cols="30" placeholder="your address"></textarea><br>
+
+        <label for="city">City</label>
+        <input type="text" name=city list="ct">
+        <datalist id="ct">
+            <option>Jaipur</option>
+            <option>Ranchi</option>
+            <option>Jaisalmer</option>
+            <option>Jalore</option>
+        </datalist><br>
+
+        <label for="state">State</label>
+        <select name="state" multiple>
+            <option value="RJ">Rajasthan</option>
+            <option value="RGJ">Gujarat</option>
+            <option value="PB">Punjab</option>
+            <option value="UK">Uttarakhand</option>
+        </select>
+
+        <label for="age">Enter Age</label>
+        <input type="range" name="age" min="1" max="150" value="20"><br>
+
+        <label for="dob">DOB</label>
+        <input type="date" name="dob"><br>
+
+        <label for="colo">Color</label>
+        <input type="color" name="colo"><br>
+
+        <input type="reset" name="reset" value="Reset">
+        <input type="submit" name="submit" value="Login">
+        <input type="button" value="Register">
+    </form>
+</body>
+</html>

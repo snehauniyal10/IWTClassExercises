@@ -1,0 +1,18 @@
+body{
+    background-image:radial-gradient(red,blue),url(IWT302_lab/images/2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
+    text-align: center;
+    background-color: aliceblue;
+}
+p{
+    line-height: 2em;
+    font-size: 15px;
+    color: rgb(50, 42, 165);
+    text-align: justify;
+}
